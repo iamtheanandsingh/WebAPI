@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Weather Forecast</h1>
+        </header>
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="search-button">Search</button>
+            <button id="location-button">Use My Location</button>
+        </div>
+        <div class="date-picker-container">
+            <input type="date" id="date-picker">
+        </div>
+        <div class="weather-section">
+            <h2>Current Weather in <span id="city-name">Dallas, US</span></h2>
+            <img id="weather-icon" src="path_to_image" alt="weather icon">
+            <p>Temperature: <span id="temperature">31.78 °C</span></p>
+            <p>Weather: <span id="weather-description">Clouds - overcast clouds</span></p>
+            <p>Humidity: <span id="humidity">54%</span></p>
+            <p>Wind Speed: <span id="wind-speed">6.17 m/s</span></p>
+        </div>
+        <table id="forecast-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Icon</th>
+                    <th>Description</th>
+                    <th>Temp (°C)</th>
+                    <th>Humidity (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <footer>
+            <p>Website made by Anand Singh</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
